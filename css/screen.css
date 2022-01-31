@@ -1,0 +1,448 @@
+/* generic elements */
+* {
+  font-family: "Raleway";
+  font-size: 14px;
+}
+
+html {
+  heigth: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+/* em {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-style: normal;
+} */
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 1rem;
+  position: relative;
+}
+
+h2::before {
+  position: absolute;
+  width: 2rem;
+  height: 0.1rem;
+  background: black;
+  bottom: -0.2rem;
+  content: "";
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* header & navigation elements */
+.l-nav-logo {
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  height: 9rem;
+  width: auto;
+  display: block;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.l-nav-menu ul {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.l-nav-menu li {
+  list-style: none;
+  display: block;
+  padding: 0px;
+  border-bottom: solid 1px darkgrey;
+}
+
+.l-nav-menu a {
+  color: #0089cf;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.l-nav-menu a.is-active {
+  color: #0d2d3c;
+  text-decoration: none;
+}
+
+.l-nav-phone {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.l-nav-phone-image {
+  background-image: url("../images/phone-solid.svg");
+  background-repeat: no-repeat;
+  height: 1rem;
+  width: 1rem;
+  margin-left: auto;
+}
+
+.l-nav-phone-text {
+  padding-top: 0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.l-header-slider {
+  background-image: url("../images/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 0;
+  padding-left: 0;
+  width: auto;
+  height: 9rem;
+}
+
+/* main elements */
+main {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.l-main-sectionWeAreCompact {
+  padding: 1rem 0rem 1rem 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.l-main-sectionWeAreCompact-image {
+  background-image: url("../images/we-are-thumb.jpg");
+  width: auto;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.l-main-sectionWeAreCompact-text {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.l-main-aside {
+  background-color: #0089cf;
+  color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.l-main-aside-title-article {
+  display: none;
+}
+
+.l-main-aside-text {
+  padding: 0rem 1rem 0rem 1.5rem;
+}
+
+.l-main-aside-text h2::before {
+    background: white;
+}
+
+.l-main-aside-image {
+  padding: 0;
+}
+
+.l-main-aside-images {
+  height: 100%;
+  width: 100%;
+}
+
+.l-main-sectionFeatures-text {
+  border: solid 1px grey;
+  box-sizing: border-box;
+  text-align: center;
+  width: auto;
+  margin: 2rem 1rem;
+  padding: 1rem;
+}
+
+.l-main-sectionFeatures-text-image {
+  height: 4rem;
+  margin: 1rem;
+}
+
+.l-main-sectionFeatures-text-imageblock {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem auto;
+}
+
+/* footer elements */
+footer {
+  background-color: #374f5a;
+  color: white;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.l-footer-bloctext {
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.l-footer-bloctext-categorie {
+  list-style-type: none;
+  padding-left: 1rem;
+  color: white;
+}
+
+.l-footer-bloctext-categorie a {
+  color: white;
+}
+
+.l-footer-bloctext-input {
+  padding: 0.5rem 0px 0.5rem 1rem;
+  margin: 0 0 2rem 0;
+  width: auto;
+}
+
+.l-footer-bloctext-button {
+  background-color: #0089cf;
+  color: white;
+  border: #0089cf;
+  border-radius: 0.5rem;
+  position: absolute;
+  padding: 0.5rem 1rem;
+  margin: 2px 0px 2px 5px;
+}
+
+.l-footer-Copyright {
+  text-align: center;
+  border-top: solid 1px black;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+/* media queries Tablet Version */
+@media screen and (min-width: 600px) {
+  .l-nav-menu {
+    max-width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .l-nav-logo {
+    height: 5rem;
+    width: 15rem;
+    background-size: cover;
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .l-nav-menu ul {
+    margin-right: auto;
+  }
+
+  .l-nav-menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+    border: none;
+  }
+
+  .l-nav-phone-image {
+    background-image: url("../images/phone-solid.svg");
+    background-repeat: no-repeat;
+    height: 1rem;
+    width: 1rem;
+    margin-left: auto;
+  }
+
+  .l-nav-phone-text {
+    padding-top: 0;
+    margin-left: 0.5rem;
+  }
+
+  .l-header-slider {
+    width: 100%;
+    height: 21rem;
+  }
+
+  .l-main-sectionWeAreCompact {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .l-main-sectionWeAreCompact-image {
+    background-image: url("../images/we-are-thumb.jpg");
+    width: 700px;
+    height: 300px;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+
+  .l-main-sectionWeAreCompact-text {
+    padding-left: 1.5rem;
+    padding-top: 0;
+  }
+
+  .l-main-sectionFeatures {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .l-main-sectionFeatures-text {
+    border: solid 1px grey;
+    box-sizing: border-box;
+    text-align: center;
+    width: 17rem;
+    margin: 1.5rem auto;
+  }
+
+  .l-footer-bloctext {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .l-footer-bloctext-bloc {
+    width: 50%;
+  }
+}
+
+/* media queries PC Version */
+@media screen and (min-width: 980px) {
+  .l-nav-menu {
+    max-width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .l-nav-logo {
+    height: 4rem;
+    width: 10rem;
+    background-size: contain;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .l-nav-menu ul {
+      padding-top: 1rem;
+      margin-right: auto;
+  }
+
+  .l-nav-menu li {
+      list-style: none;
+      display: inline-block;
+      padding: 1rem;
+      border: none;
+  }
+
+    .l-nav-menu a.is-active {
+      color: #0089cf;
+    }
+
+  .l-nav-menu a:hover {
+    color: #0d2d3c;
+    text-decoration: none;
+  }
+
+  .l-nav-phone-image {
+    background-image: url("../images/phone-solid.svg");
+    background-repeat: no-repeat;
+    height: 1rem;
+    width: 1rem;
+    margin-left: auto;
+  }
+
+  .l-nav-phone-text {
+    margin-left: 0.5rem;
+  }
+
+  .l-header-slider {
+    width: 100%;
+    height: 480px;
+  }
+
+  .l-main-sectionWeAreCompact {
+    padding: 1rem 0rem 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .l-main-sectionWeAreCompact-image {
+    background-image: url("../images/we-are-thumb.jpg");
+    width: 500px;
+    height: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0;
+  }
+
+  .l-main-sectionWeAreCompact-text {
+    padding-top: 0;
+    padding-left: 1rem;
+  }
+
+  .l-main-sectionFeatures {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .l-main-aside {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .l-main-aside-text {
+    padding: 1rem;
+    width: 600px;
+  }
+
+  .l-main-sectionFeatures-text {
+    border: solid 1px darkgrey;
+    box-sizing: border-box;
+    text-align: center;
+    width: 350px;
+    margin: 1.5rem auto;
+  }
+
+  footer {
+    padding-left: 0px;
+  }
+
+  .l-footer-bloctext {
+    padding: 0 0.5rem;
+    max-width: 1100px;
+  }
+
+  .l-footer-bloctext-bloc {
+    width: 25%;
+  }
+
+  .l-footer-bloctext-input {
+    padding: 0.5rem 0 0.5rem 1rem;
+    margin: 0 0 1.5rem 0;
+    width: 11rem;
+  }
+}
